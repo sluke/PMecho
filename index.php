@@ -33,7 +33,7 @@
 			}
 			?>
 		</div>
-		<div id="powerby">Power by <a href="<?php echo $site_url;?>"><?php echo $sitename;?></a></div>
+		<div id="powerby">Power by <a href="https://github.com/sluke/PMecho">PMecho</a></div>
 	</div>
 </body>
 </html>

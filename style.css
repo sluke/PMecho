@@ -1,0 +1,55 @@
+@media screen and (min-device-width: 768px) {
+	#index_wrapper {
+		margin: 2% 0 0 25%;
+		padding: 0 5%;
+	}
+	#header {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 30%;
+	}
+	#header #sitename{
+		margin: 5em 5% 0 0;
+		text-align: right;
+	}
+	#header #description {
+		text-align: right;
+	}
+	#header #socialapp{
+		text-align: right;
+	}
+}
+
+#header {
+	background: #ccc;
+	color: #fff;
+	padding: 1em 0;
+	text-align: center;
+}
+#header #sitename{
+	font-size: 2.4em;
+	font-weight: bold;
+	color: #df2d4f;
+}
+#header #description{
+	font-size: 1.2em;
+	margin: 0.8em 5% 0 0;
+}
+#header #socialapp{
+	font-size: 0.8em;
+	margin: 0.8em 5% 0 0;
+}
+#header #socialapp a{
+	padding: 0.1em 0.4em;
+	background: #df2d4f;
+	color: #fff;
+}
+#content_list { margin:1em;}
+	#content_list a{text-decoration: none;overflow: hidden;display: block;margin-top:0.4em;padding:0.4em 0.6em;border:1px solid #eee ;box-shadow: 2px 2px 1px #ccc;}
+	#content_list a:hover {background:#eee;}
+	#content_list .post_time {color:#808080;padding-left:24px;background: transparent url('ic_today_black_24dp_1x.png') no-repeat left center;}
+#powerby { text-align: center; margin-top: 2em; padding:20px 0; font-size: 0.8em;}
+
+#wrapper {width:80%; margin:0 auto;}
+#back_index {font-size:0.6em;margin:5em 0 2em 0;padding:1em 0;text-align:center; border-width:1px 0;border-style:solid;border-color:#eee;}

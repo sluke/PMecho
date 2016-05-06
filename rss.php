@@ -37,7 +37,7 @@
 			$content_url = $site_url."page.php?content=".$contents_list[$i][0];
 			$content_title = $contents_list[$i][1];
 			// 大概八点二十发
-			$content_published_time = $contents_list[$i][2]."08:20:20+08:00";
+			$content_published_time = $contents_list[$i][2]." 08:20:20 ".date ("P", filemtime($md));
 			//打开文件获取标题、更新时间、摘要、内容
 			$md = "$dir/".$contents_list[$i][0].".md";
 			$content_updated_time = date ("Y-m-d H:i:sP", filemtime($md));

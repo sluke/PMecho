@@ -30,8 +30,8 @@
 		$content_public_time = str_replace('__','',$content_public_time);
 	    fclose($file);
 		$content_list[$i] = array($file_path_list[$i],$content_title,$content_public_time);
-		$time_sort[$i] = str_replace('-','',$time_sort[$i]);
-		$time_sort[$i] = floatval($content_public_time);
+		$time_sort[$i] = str_replace('-','',$content_public_time);
+		$time_sort[$i] = floatval($time_sort[$i]);
 	}
 	// 利用发布日期倒序排序
 	array_multisort($time_sort, $content_list);

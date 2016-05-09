@@ -27,7 +27,7 @@
 		<language>zh_CN</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<generator uri="http://Luplusplus.com/" version="0.2">Luplusplus</generator>
+		<generator uri="https://github.com/sluke/PMecho" version="0.2">PMecho</generator>
 	<?php
 		// 取前10条内容
 		$file_num = count($contents_list);

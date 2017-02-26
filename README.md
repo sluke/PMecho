@@ -26,8 +26,8 @@ demo: [http://www.luplusplus.com](http://www.luplusplus.com)
 	第一行：# 请用#的方式写标题
 	第二行：__2016-05-06__
 ```
-2. achive_list.php文件是用来保存数组的，请保持可读写，也就是777。
-3. run_my_site.php会生成achive_list.php，请修改为只有自己知道的文件名。
+2. achive_list.php文件是用来保存数组的，避免每次访问都需要遍历日志文件，请保持可读写，也就是777。
+3. run_my_site.php会生成achive_list.php，请修改为只有自己知道的文件名，在更新日志后访问该文件更新站点，密码在config.php中修改。
 4. config.php是配置文件，请自由修改。
 5. 使用了 [HyperDown](https://github.com/SegmentFault/HyperDown) 作为markdown解析器。
 6. 使用了 [Typo.css](https://github.com/sofish/Typo.css) 作为中文网页重设与排版样式。

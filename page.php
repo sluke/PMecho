@@ -1,6 +1,6 @@
 <?php
 	include "config.php";
-	include "Parsedown.php";
+	require_once __DIR__ . '/Parser.php';
 	$content = $_GET['content'];
 	$md = "$dir/"."$content".".md";
 	$f= @fopen($md,"r");
@@ -13,7 +13,7 @@
 	} else {
 		$text = $content_error;
 	}
-	$Parsedown = new Parsedown();
+	$parser = new HyperDown\Parser;
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,10 +32,11 @@
 <body>
 	<div id="wrapper" class="typo typo-selection">
 		<?php
-			echo $Parsedown->text($text);
+			echo $html = $parser->makeHtml($text);
 		?>
 		<div id="back_index">
-			<a href="/" title="回首页－<?php echo $sitename;?>"> －回首页</a>
+			<a href="/" title="Back to the homepage－<?php echo $sitename;?>"> << Back to the index
+</a>
 		</div>
 		<div id="powerby">Power by <a href="https://github.com/sluke/PMecho">PMecho</a></div>
 	</div>

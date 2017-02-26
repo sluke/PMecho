@@ -49,6 +49,20 @@
 	#content_list a{text-decoration: none;overflow: hidden;display: block;margin-top:0.4em;padding:0.4em 0.6em;border:1px solid #eee ;box-shadow: 2px 2px 1px #ccc;}
 	#content_list a:hover {background:#eee;}
 	#content_list .post_time {color:#808080;padding-left:24px;background: transparent url('ic_today_black_24dp_1x.png') no-repeat left center;}
+
+#pading_nav {margin:2em 1em;}
+		#pading_nav a{
+			font-size: 0.8em;
+			margin-right:0.2em;
+			padding: 0.1em 0.4em;
+			color: #df2d4f;
+			border:1px solid #eee;
+		}
+		#pading_nav a:hover{
+			border:1px solid #df2d4f;
+			text-decoration:none;
+		}
+
 #powerby { text-align: center; margin-top: 2em; padding:20px 0; font-size: 0.8em;}
 
 #wrapper {width:80%; margin:0 auto;}

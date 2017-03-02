@@ -48,7 +48,7 @@
 #content_list { margin:1em;}
 	#content_list a{text-decoration: none;overflow: hidden;display: block;margin-top:0.4em;padding:0.4em 0.6em;border:1px solid #eee ;box-shadow: 2px 2px 1px #ccc;}
 	#content_list a:hover {background:#eee;}
-	#content_list .post_time {color:#808080;padding-left:24px;background: transparent url('ic_today_black_24dp_1x.png') no-repeat left center;}
+	#content_list .post_time {color:#808080;}
 
 #pading_nav {margin:2em 1em;}
 		#pading_nav a{

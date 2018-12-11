@@ -35,8 +35,7 @@
 			echo $html = $parser->makeHtml($text);
 		?>
 		<div id="back_index">
-			<a href="/" title="Back to the homepage－<?php echo $sitename;?>"> << Back to the index
-</a>
+			<a href="/" title="Back to the homepage－<?php echo $sitename;?>"> &lt;&lt; Back to the index </a>
 		</div>
 		<div id="powerby">Power by <a href="https://github.com/sluke/PMecho">PMecho</a></div>
 	</div>

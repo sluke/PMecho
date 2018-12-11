@@ -20,21 +20,18 @@
 	}
 	// 打开文件并获取标题和发布时间
 		$file_num = count($file_path_list);
-		for ($i=0; $i < $file_num; $i++) { 
-	    	$file= fopen($file_path_list[$i],"r");
-			$file_path_list[$i] = str_replace("$dir/",'',$file_path_list[$i]);
-			$file_path_list[$i] = str_replace(".md",'',$file_path_list[$i]);
-	    	$content_title = fgets($file);
-			$content_title = trim($content_title);
-	    	$content_title = str_replace("# ",'',$content_title);
+		for ($i = 0; $i < $file_num; $i++) { 
+		    $file = fopen($file_path_list[$i], "r");
+			$file_path_list[$i] = str_replace("$dir/", '' ,$file_path_list[$i]);
+			$file_path_list[$i] = str_replace(".md", '' ,$file_path_list[$i]);
+		    $content_title = fgets($file);
+		    $content_title = trim(preg_replace('/(#)/', '' ,$content_title));
 			$content_public_time = fgets($file);
-			$content_public_time = trim($content_public_time);
-			$content_public_time = str_replace('__','',$content_public_time);
-			fclose($file);
-			$content_list[$i] = array($file_path_list[$i],$content_title,$content_public_time);
-			$time_sort[$i] = str_replace('-','',$content_public_time);
-			$time_sort[$i] = floatval($time_sort[$i]);
-	}
+			$content_public_time = trim(preg_replace('/([\*|_])/', '',$content_public_time));
+		    fclose($file);
+			$content_list[$i] = array($file_path_list[$i], $content_title, $content_public_time);
+			$time_sort[$i] = floatval(str_replace('-', '', $content_public_time));
+		}
 	// 利用发布日期倒序排序
 		array_multisort($time_sort, $content_list);
 		krsort($content_list);

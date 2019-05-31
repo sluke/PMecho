@@ -4,7 +4,7 @@
 	// 输出列表
 	$file_num = count($contents_list);
 	// 避免输入的当前页码过大，取最新一页
-    $current_page_num = intval($_GET['current_page_num']);
+    	@$current_page_num = intval($_GET['current_page_num']);
 	$page_num = ceil($file_num / $paging);
 	while ($current_page_num > $page_num | $current_page_num <= 0 | $current_page_num == null) {
 		$current_page_num = 1;
